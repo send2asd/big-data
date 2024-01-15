@@ -1,1 +1,46 @@
+# Ajay Singh
+## Master of Science in Computer Science
 
+### Pig Latin Script for Task 1(Part1.pig)
+``` 
+Family = LOAD 'DEC_00_SF3_P077_with_ann.csv' USING  org.apache.pig.piggybank.storage.CSVExcelStorage() as ( Id:chararray, Zip:chararray, Geography:chararray, Family_Income:int);
+Family_Less_Income = FILTER Family  BY Family_Income < 50000;
+Result = foreach Family_Less_Income generate Zip, Family_Income;
+STORE Result INTO 'hdfs://localhost:9000/Pig_Task_1.out' USING PigStorage (',');
+
+```
+
+### Pig Latin Script for Task 2(Part2.pig)
+``` 
+Family = LOAD 'DEC_00_SF3_P077_with_ann.csv' USING  org.apache.pig.piggybank.storage.CSVExcelStorage() as ( Id:chararray, Zip:chararray, Geography:chararray, Family_Income:int);
+Family_GROUP = GROUP Family ALL;
+AVG_INCOME = FOREACH Family_GROUP GENERATE AVG(Family.Family_Income) as avg;
+UNORDER_INCOME = FILTER Family  BY Family_Income > AVG_INCOME.avg;
+ORDER_INCOME = Order UNORDER_INCOME  BY Family_Income ASC;
+Family_Detail = FOREACH ORDER_INCOME generate Id, Zip, Family_Income;
+STORE Family_Detail INTO 'hdfs://localhost:9000/Pig_Task_2.out' USING PigStorage (',');
+
+```
+
+
+
+### Pig Latin Script for Task 3(Part3.pig). In this task counting the records for those whose family income is greater than 100000.
+``` 
+Family = LOAD 'DEC_00_SF3_P077_with_ann.csv' USING  org.apache.pig.piggybank.storage.CSVExcelStorage() as ( Id:chararray, Zip:chararray, Geography:chararray, Income:int);
+Six_digit_salary = FILTER Family  BY Income > 100000;
+Group_data = GROUP Six_digit_salary ALL;
+Six_digit_salary_count = foreach Group_data  Generate COUNT(Six_digit_salary);
+STORE Six_digit_salary_count INTO 'hdfs://localhost:9000/Pig_Task_3.out' USING PigStorage (',');
+
+```
+
+
+#### What technical errors did you experience?
+- DataNode getting failed while running Pig files in local mode.
+- In Task 3: Pig latin has some limitation in query. Unable to find any function which can directly calculate length of any integer value in Pig Latin.
+
+#### What conceptual difficulties did you experience?
+- Downloading ouput file from HDFS to local system. 
+
+#### What advice would you give someone doing this assignment in the future?
+- They should run Pig Script also in MapReduce mode along with Local mode for more learning.
