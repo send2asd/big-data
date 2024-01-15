@@ -59,7 +59,7 @@ This project aims to provide a hands-on experience in applying Big Data analytic
 
 - Code files are inside code folder
 
-- CSV, are inside flight_data folder
+- CSV, are inside flight_data folder(flight.csv file is not uploaded because of size. You can email me fot that)
 
 
 ## how to run
