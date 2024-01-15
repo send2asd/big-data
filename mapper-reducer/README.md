@@ -1,6 +1,7 @@
 # Ajay Singh
 ## Master of Science in Computer Science
-
+## Overview
+- This project focuses on implementing MapReduce algorithms using Apache Hadoop and the Python mrjob library. The tasks involve exploring and filtering random text files to calculate average values and apply specific filters. The project is divided into two main tasks.
 ### What commands did you use to run each script?
 ``` 
     python3 FirstJob.py randomBook.txt > FirstJob_OutPut.txt
