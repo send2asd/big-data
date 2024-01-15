@@ -11,6 +11,18 @@
 
 ### Start Pig in local interactive mode: pig -x local
 
+## Pig Tasks
+### Pig Task #1:
+- Write a Pig script that results in two fields - zip code and income - with incomes below $50,000 (excluding $50,000).
+Store results in Pig_Task_1.out.
+
+### Pig Task #2:
+
+- Write a Pig script to output three fields - id, zip code, and income - sorted in ascending order by income, containing records with income strictly larger than the average income across all records.
+Store results in Pig_Task_2.out.
+### Pig Task #3:
+- Develop a useful, interesting, and insightful query using Pig.
+Store results in Pig_Task_3.out.
 
 ### Pig Latin Script for Task 1(Part1.pig)
 ``` 
