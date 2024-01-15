@@ -1,12 +1,9 @@
 # Ajay Singh
 ## Master of Science in Computer Science
 
-### How much time did you spend on each part of the assignment?
+## Overview
+- This assignment is designed to familiarize you with the fundamentals of Apache Hadoop Distributed File System (HDFS). The tasks involve both command-line operations and Python API interactions with HDFS. The goal is to ensure that you not only grasp the basic operations but also learn to navigate documentation for more advanced tasks. Additionally, there's an intriguing hypothetical question related to computing power that encourages you to provide a scientific answer.
 
-#### Gitlab & Git
-- It took 1 hour to setup git repository and complete readme.md file. 
-#### Docker setup/usage
-- Docker setup/usage took almost 8 hours. Many errors came mostly came due to down of datanode or namenode. "java.net.ConnectException: Connection refused" was the most common. 
 
 ### What was the hardest part of this assignment?
 - To setup docker and hadoop was the most challenging  part of this assignment. 
