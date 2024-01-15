@@ -16,10 +16,6 @@ This project, conducted as part of  Big Data Analytics, focuses on selecting a p
 
 3. **Tools for Big Data Education:**
    - Investigate alternatives to creating Hadoop environments with Docker containers for educational purposes.
-   - Explore tools or platforms like Google or Amazon for educational applications.
-
-4. **Other AI Problems:**
-   - Propose and explore AI problems beyond the specified topics.
 
 ## Collaboration
 This project is a collaborative effort between two students enrolled in Big Data. Each student will provide a 1-page statement detailing their contributions and key lessons learned.
