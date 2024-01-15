@@ -1,5 +1,16 @@
 # Ajay Singh
 ## Master of Science in Computer Science
+## Overview
+- This assignment involves using Pig, a high-level platform for creating MapReduce programs to simplify the data processing tasks in Hadoop. The provided data set, "median_income_by_zipcode_census_2000," will be analyzed using Pig scripts to answer specific questions and perform insightful queries.
+
+## Setup
+- Ensure your assignment is properly set up using the provided Docker image.
+- Use the following command to run the Docker image and start Pig in local mode:
+
+```docker run -it -p 50070:50070 -v "$PWD":/mySpace -p 8088:8088 -p 8080:8080 suhothayan/hadoop-spark-pig-hive:2.9.2 bash```
+
+### Start Pig in local interactive mode: pig -x local
+
 
 ### Pig Latin Script for Task 1(Part1.pig)
 ``` 
