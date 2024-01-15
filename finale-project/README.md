@@ -1,9 +1,40 @@
 # FINALE_PROJECT_BIG_DATA
+## Flight Delays and Cancellations Analysis
 
+### Problem Statement
+- We are utilizing the 2015 Flight Delays and Cancellations dataset provided by the Department of Transport. The dataset includes information on airports, flights, and airlines. The "airport.csv" file contains details such as the name, city, longitude, and latitude of airports. The "flight.csv" file includes flight details like the day of the flight, departure and arrival times, flight code, delays, and distance between the destination and source airport. Additionally, the "airlines.csv" file provides airline data, including names and codes.
 
+### Proposed Approach
+- We will leverage PySpark, part of the Apache Spark framework, to read and process the dataset. The initial steps involve data cleaning to handle any missing or inconsistent data. Subsequently, we will perform various queries to extract insights from the dataset.
 
-## Overview
-This project, conducted as part of  Big Data Analytics, focuses on selecting a problem amenable to Big Data techniques. The goal is to investigate, implement a solution, and analyze the resulting system based on relevant performance metrics. The project areas include MapReduce, Spark, SparkML, and tools for big data education.
+### Task 1: Rank Airlines
+- We will rank flight companies based on their punctuality and airtime. This ranking will consider factors such as delays, airtime, and flight speed. Calculating flight speed will contribute to the overall ranking.
+
+### Task 2: Find Route Between Two Airports
+- We aim to determine the most optimized route between two given airports. This task involves analyzing the dataset to identify routes that minimize travel time or delays.
+
+### Task 3: Predict Flight Delays
+- Using machine learning techniques, we will train a model to predict flight delays based on historical data. This predictive model will offer insights into potential delays, allowing for proactive measures.
+
+### Additional Tasks
+- Further analysis of the dataset may reveal additional tasks and insights that can be explored. The flexibility of PySpark enables the addition of more tasks as needed.
+
+### Setup Environment:
+
+- Ensure you have Apache Spark and PySpark installed.
+Use the provided dataset: "airport.csv," "flight.csv," and "airlines.csv."
+
+### Execute PySpark Scripts:
+- Run PySpark scripts to read, clean, and analyze the dataset.
+Example command: spark-submit analyze_flights.py
+
+### Review Results:
+- Analytical results will be generated based on the defined tasks.
+Explore the generated reports and insights for each task.
+
+### Extend Analysis:
+- Additional analysis tasks can be added as needed.
+Modify PySpark scripts to include new queries or insights.
 
 ## Project Topics
 1. **MapReduce Exploration:**
